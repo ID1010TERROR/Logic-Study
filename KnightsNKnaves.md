@@ -21,4 +21,12 @@ A. Mel is a knight and Zoey is a knave
 
 9. You meet two inhabitants: Ted and Zeke. Ted claims, “Zeke could say that I am a knave.” Zeke claims that it's not the case that Ted is a knave.
 
-10. You meet two inhabitants: Ted and Zippy. Ted says, “Of I and Zippy, exactly one is a knight.” Zippy says that Ted is a knave.9. You meet two inhabitants: Ted and Zeke. Ted claims, “Zeke could say that I am a knave.” Zeke claims that it's not the case that Ted is a knave.
+10. You meet two inhabitants: Ted and Zippy. Ted says, “Of I and Zippy, exactly one is a knight.” Zippy says that Ted is a knave.
+
+In the situation where there are only 2 individuals, there are only 4 possibilities
+
+1. Person A is a knight and person B is a knight === P ^ Q
+2. Person A is a knave and person B is a knave ===== ~P ^ ~Q
+2. Person A is a knight and person B is a knave ==== P ^ ~Q
+4. Person A is a knave and person B is a knight ==== ~P ^ Q
+
