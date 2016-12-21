@@ -3,9 +3,13 @@ In logic a rule of inference is a logical form consisting of a fucntion which ta
 
 ##Symbols
 > ~ = not
+
 > ^ = and
+
 > v = or
+
 > --> = If then/Implies
+
 > ∴ = Therefore
 
 ##Standard form of an Inference
@@ -14,7 +18,9 @@ In logic a rule of inference is a logical form consisting of a fucntion which ta
 3. ∴ consequent
 
 > P --> Q
+
 > P
+
 >  ∴Q
 
 
@@ -28,8 +34,10 @@ The **Law of detachment** (AKA **affirming the actecedent** and **modus ponens**
 3. ∴ Q (Conclusion Deduced)
 
 > All men are mortal
->    Socrates is a man
->    Therefore Socrates is mortal
+
+> Socrates is a man
+
+> Therefore Socrates is mortal
 
 ###Common associated fallacy - Affirming the consequent 
 Affirming the consequent (AKA **Converse Error**) is a formal fallacy of inferring the converse from the original statement.
@@ -39,7 +47,9 @@ Affirming the consequent (AKA **Converse Error**) is a formal fallacy of inferri
 3.  ∴ P
 
 > If everyone was against me I'd have a bad day 
+
 > I had a bad day 
+
 > Therefore everyone is against me. 
 
 
@@ -53,7 +63,9 @@ The law of **contrapositive** (AKA **Modus Tollens**) states that, in a conditio
 3. ∴ ~ P (Not P)
 
 > If it has a vagina then it is a woman
+
 > Johns does not have a vagina
+
 >  Therefore John is not a woman (Regardless of what he puts on his DEERS)
 
 ###Common associated fallacy - Denying the antecedent
@@ -64,7 +76,9 @@ AKA **Inverse Error** or **Fallacy of the inverse** is a formal fallacy of infer
 3. ∴ ~Q
 
 > If you run, you'll get sweaty 
+
 > You didn't run
+
 > Therefore you're not sweaty (What if I went biking?)
 
 
@@ -77,7 +91,9 @@ The law of syllogism (AKA **The Chain Rule** ) takes two conditional statements 
 3. ∴ P --> R
 
 >  If Jay doesn't study, he'll get bad grades
+
 >  If Jay gets bad grades, he won't get to do his job
+
 >  If Jay doesn't study, he won't get to do his job
 
 
@@ -89,7 +105,9 @@ Conjunctive Addition is a rule of inference pertaining to the AND Operator. Conj
 3. ∴ P ^ Q
 
 > The sky is blue
+
 > The sun is out
+
 > Therefore the sky is blue and the sun is out. 
 
 
@@ -125,6 +143,7 @@ For example given the true statement:
 2. P v Q
 
 > Carbs are delicious
+
 > Carbs are delicious or cocaine is a hell of a drug.
 
 The above statement is true regardless of what Q is because P is True and we are using the OR operator.
@@ -137,7 +156,9 @@ Disjunctive Inference (AKA The Process of Elimination) is another rule pertainin
 3. ∴ P
 
 > Either your an asshole or you're just hungry.
+
 > You're not hungry
+
 > Therefore you're just an asshole
 
 
