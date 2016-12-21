@@ -3,9 +3,13 @@ In logic a rule of inference is a logical form consisting of a fucntion which ta
 
 ##Symbols
 > ~ = not
+
 > ^ = and
+
 > v = or
+
 > --> = If then/Implies
+
 > ∴ = Therefore
 
 ##Standard form of an Inference
@@ -90,7 +94,7 @@ AKA **Inverse Error** or **Fallacy of the inverse** is a formal fallacy of infer
 
 
 ##Syllogism
-The law of syllogism takes two conditional statements and forms a conclusion by combining the hypothesis of one statement with the conclusion of another.
+The law of syllogism (AKA **The Chain Rule** ) takes two conditional statements and forms a conclusion by combining the hypothesis of one statement with the conclusion of another.
 
 1. P --> Q
 
@@ -105,3 +109,77 @@ The law of syllogism takes two conditional statements and forms a conclusion by 
 >  If Jay doesn't study, he won't get to do his job
 
 
+##Conjunctive Addition
+Conjunctive Addition is a rule of inference pertaining to the AND Operator. Conjunctive Addition means that any two true statements can be joined to form a conjunction. 
+
+1. P
+
+> The sky is blue
+
+2. Q
+
+> The sun is out
+
+3. ∴ P ^ Q
+
+> Therefore the sky is blue and the sun is out. 
+
+
+##Demorgan's Law
+Demorgan's law of inference is use to convert a negative to a conjunction or disjunction.
+
+1. ~(P ^ Q)
+
+> It is not true that I have a dog and a cat.
+
+Demorgans law states that I can convert the above negative conjunction to the below:
+
+2. ~P v ~Q
+
+> I do not have a cat or I do not have a dog.
+
+The above is an example of converting a negative conjunction into a disjuction alternatively we could use the same method to turn  a negative disjunction into a conjunction:
+
+1. ~(P v Q)
+
+> It is not true that Will Ferral is funny or step brothers was a great movie.
+
+2. ~P ^ ~Q
+
+> Will Ferral is not funny and step brothers was not a great movie.
+
+
+##Disjunctive Addition
+Disjunctive Addition is of inference which uses the OR operator. It adds any statement, whether true or false, to a true statement.
+For example given the true statement:
+
+1. P
+
+> Carbs are delicious
+
+2. P v Q
+
+> Carbs are delicious or cocaine is a hell of a drug.
+
+The above statement is true regardless of what Q is because P is True and we are using the OR operator.
+
+##Disjunctive Inference
+Disjunctive Inference (AKA The Process of Elimination) is another rule pertaining to the OR operator, which states that in a disjunction, if one of the disjuncts is false, then the other has to be true.
+
+1. P v Q
+
+> Either your an asshole or you're just hungry.
+
+2. ~Q
+
+> You're not hungry
+
+3. ∴ P
+
+> Therefore you're just an asshole
+
+
+
+
+
+##References
