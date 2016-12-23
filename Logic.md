@@ -1,7 +1,10 @@
 #Rules of Inference
 In logic a rule of inference is a logical form consisting of a fucntion which takes premises, analyzes their syntax and returns a conclusion or conclusions. 
 
-##Symbols
+
+##Terms
+
+###Symbols
 > ~ = not
 
 > ^ = and
@@ -11,6 +14,36 @@ In logic a rule of inference is a logical form consisting of a fucntion which ta
 > --> = If then/Implies
 
 > ∴ = Therefore
+
+###Syllogism
+A Syllogism is a type of logical argument which applies deductive reasoning to reach a conclusion based on two or more propositions which are stated and assumed to be true.
+
+###Deductive Reasoning
+The process of reasoning from one or more premises(statements) to reach a logically certain conclusion.
+
+###Inductive Reasoning
+The process of reasoning in which the premises are said to supply strong evidence for the truth of a conclusion. Dealing more with the probability that a given outcome is true.
+
+###Abductive Reasoning
+A form of logical inference which goes from an observation to a theory, which explains the observation.
+
+
+###Valid
+An argument is said to be "Valid" if it is impossible for its premises to be true while it's conclusion is false, meaning if the conclusion must be true, if the premises are true.
+
+###Sound
+An argument is said to be "Sound" if it is valid AND the premises are true. An argument can be Valid without being sound for example:
+
+1. Everyone who eats bannanas is a monkey
+2. Jane eats bannanas
+3. Therefore Jane is a Monkey
+
+This is an example of a logically valid argument that is unsound.
+
+
+
+
+
 
 ##Standard form of an Inference
 1. antecedent 1 
@@ -26,7 +59,7 @@ In logic a rule of inference is a logical form consisting of a fucntion which ta
 
 
 
-##Modus Ponens
+##Modus Ponendo Ponens
 The **Law of detachment** (AKA **affirming the actecedent** and **modus ponens**) is the first form of deductive reasoning. It states that if a conditional statement is made, and a hypothesis is stated, then the conclusion is deduced from the statement and the hypothesis.
 
 1. P --> Q (Conditional statement)
@@ -83,7 +116,7 @@ AKA **Inverse Error** or **Fallacy of the inverse** is a formal fallacy of infer
 
 
 
-##Syllogism
+##Hypothetical Syllogism
 The law of syllogism (AKA **The Chain Rule** ) takes two conditional statements and forms a conclusion by combining the hypothesis of one statement with the conclusion of another.
 
 1. P --> Q
@@ -95,6 +128,23 @@ The law of syllogism (AKA **The Chain Rule** ) takes two conditional statements 
 >  If Jay gets bad grades, he won't get to do his job
 
 >  If Jay doesn't study, he won't get to do his job
+
+##Disjunctive Syllogism
+This valid argument form (AKA Modus Tollendo Ponens, AKA process of elimination) is a syllogism having a disjunctive statement (using an OR(or XOR) operator) for one of its premises.
+
+1. P v Q
+2. ~P
+3. ∴ Q
+
+> Either your an asshole or you're just hungry.
+
+> You're not hungry
+
+> Therefore you're just an asshole (It is also possible that you're both)
+
+
+
+
 
 
 ##Conjunctive Addition
@@ -147,21 +197,6 @@ For example given the true statement:
 > Carbs are delicious or cocaine is a hell of a drug.
 
 The above statement is true regardless of what Q is because P is True and we are using the OR operator.
-
-##Disjunctive Inference
-Disjunctive Inference (AKA The Process of Elimination) is another rule pertaining to the OR operator, which states that in a disjunction, if one of the disjuncts is false, then the other has to be true.
-
-1. P v Q
-2. ~Q
-3. ∴ P
-
-> Either your an asshole or you're just hungry.
-
-> You're not hungry
-
-> Therefore you're just an asshole
-
-
 
 
 
