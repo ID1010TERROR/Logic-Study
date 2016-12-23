@@ -57,9 +57,9 @@ This is an example of a logically valid argument that is unsound.
 >  ∴Q
 
 
+##Logical Forms
 
-
-##Modus Ponendo Ponens
+###Modus Ponendo Ponens
 The **Law of detachment** (AKA **affirming the actecedent** and **modus ponens**) is the first form of deductive reasoning. It states that if a conditional statement is made, and a hypothesis is stated, then the conclusion is deduced from the statement and the hypothesis.
 
 1. P --> Q (Conditional statement)
@@ -72,7 +72,7 @@ The **Law of detachment** (AKA **affirming the actecedent** and **modus ponens**
 
 > Therefore Socrates is mortal
 
-###Common associated fallacy - Affirming the consequent 
+####Common associated fallacy - Affirming the consequent 
 Affirming the consequent (AKA **Converse Error**) is a formal fallacy of inferring the converse from the original statement.
 
 1. P --> Q (Conditional statement)
@@ -88,7 +88,7 @@ Affirming the consequent (AKA **Converse Error**) is a formal fallacy of inferri
 
 
 
-##Modus Tollens
+###Modus Tollens
 The law of **contrapositive** (AKA **Modus Tollens**) states that, in a conditional, if the conclusion is false, then the hypothesis must also be false.
 
 1. P --> Q (Conditional statement) 
@@ -101,7 +101,7 @@ The law of **contrapositive** (AKA **Modus Tollens**) states that, in a conditio
 
 >  Therefore John is not a woman (Regardless of what he puts on his DEERS)
 
-###Common associated fallacy - Denying the antecedent
+####Common associated fallacy - Denying the antecedent
 AKA **Inverse Error** or **Fallacy of the inverse** is a formal fallacy of inferring the inverse from the original statement.
 
 1. P --> Q
@@ -116,7 +116,7 @@ AKA **Inverse Error** or **Fallacy of the inverse** is a formal fallacy of infer
 
 
 
-##Hypothetical Syllogism
+###Hypothetical Syllogism
 The law of syllogism (AKA **The Chain Rule** ) takes two conditional statements and forms a conclusion by combining the hypothesis of one statement with the conclusion of another.
 
 1. P --> Q
@@ -129,7 +129,7 @@ The law of syllogism (AKA **The Chain Rule** ) takes two conditional statements 
 
 >  If Jay doesn't study, he won't get to do his job
 
-##Disjunctive Syllogism
+###Disjunctive Syllogism
 This valid argument form (AKA Modus Tollendo Ponens, AKA process of elimination) is a syllogism having a disjunctive statement (using an OR(or XOR) operator) for one of its premises.
 
 1. P v Q
@@ -143,11 +143,7 @@ This valid argument form (AKA Modus Tollendo Ponens, AKA process of elimination)
 > Therefore you're just an asshole (It is also possible that you're both)
 
 
-
-
-
-
-##Conjunctive Addition
+###Conjunctive Addition
 Conjunctive Addition is a rule of inference pertaining to the AND Operator. Conjunctive Addition means that any two true statements can be joined to form a conjunction. 
 
 1. P
@@ -161,7 +157,7 @@ Conjunctive Addition is a rule of inference pertaining to the AND Operator. Conj
 > Therefore the sky is blue and the sun is out. 
 
 
-##Demorgan's Law
+###Demorgan's Law
 Demorgan's law of inference is use to convert a negative to a conjunction or disjunction.
 
 1. ~(P ^ Q)
@@ -185,7 +181,7 @@ The above is an example of converting a negative conjunction into a disjuction a
 > Will Ferral is not funny and step brothers was not a great movie.
 
 
-##Disjunctive Addition
+###Disjunctive Addition
 Disjunctive Addition is of inference which uses the OR operator. It adds any statement, whether true or false, to a true statement.
 For example given the true statement:
 
