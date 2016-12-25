@@ -1,35 +1,27 @@
-#Rules of Inference
-In logic a rule of inference is a logical form consisting of a fucntion which takes premises, analyzes their syntax and returns a conclusion or conclusions. 
+Below are my self-study notes in the realm of logic.
 
+#Overview
+Logic is the study of **Correct Reasoning** in that it attempts to use a set of principles governing the validity of a given argument or set of arguments. This includes the use of **Truth Tables**, **Binary Operators**, **Syllogisms**, etc to determine the validity of a given argument.
 
-##Terms
+#Terms
 
-###Symbols
-> ~ = not
+###Statements
+Sentences (AKA **Premises**) that are either True or False but not both. For example: 
 
-> ^ = and
+> 1 is an odd number 
 
-> v = or
+> 3 is an even number
 
-> --> = If then/Implies
+The first statement is True, while the second statement is False
 
-> ∴ = Therefore
-
-###Syllogism
-A Syllogism is a type of logical argument which applies deductive reasoning to reach a conclusion based on two or more propositions which are stated and assumed to be true.
+###Logical Operations
+Statements can be combined or modified using Logical Operations via Logical Operators such as NOT, AND, OR, XOR, etc.
 
 ###Deductive Reasoning
 The process of reasoning from one or more premises(statements) to reach a logically certain conclusion.
 
-###Inductive Reasoning
-The process of reasoning in which the premises are said to supply strong evidence for the truth of a conclusion. Dealing more with the probability that a given outcome is true.
-
-###Abductive Reasoning
-A form of logical inference which goes from an observation to a theory, which explains the observation.
-
-
 ###Valid
-An argument is said to be "Valid" if it is impossible for its premises to be true while it's conclusion is false, meaning if the conclusion must be true, if the premises are true.
+An argument is said to be "Valid" if it is impossible for its premises to be true while it's conclusion is false, meaning the conclusion must be true, if the premises are true.
 
 ###Sound
 An argument is said to be "Sound" if it is valid AND the premises are true. An argument can be Valid without being sound for example:
@@ -40,10 +32,84 @@ An argument is said to be "Sound" if it is valid AND the premises are true. An a
 
 This is an example of a logically valid argument that is unsound.
 
+###Rules of Inference or Syllogisms
+In logic a rule of inference (AKA **Syllogism**) is a logical form consisting of a function which takes premises, analyzes their syntax and returns a conclusion or conclusions using deductive reasoning.
+
+#Logical Operator Truth Tables
+
+## ~ or ! = NOT
+
+| A | ~A |
+|---|----|
+| T | F  |
+| F | T  |
+
+The operation "Not" is the simplest logical operation, its sole purpose is to "flip" the Truth of a given statement. Converting True statements to False statements and False statements to True statements.
+
+The statement 'NOT P' is said to be the **Negation** of P. 
+
+## ^ = and
+
+| A | B | A ^ B |
+|---|---|:-----:|
+| T | T |   T	|
+| T | F |   F   |
+| F | T |   F	|
+| F | F |   F	|
+
+If given two statements A AND B, the argument is said to be True when A AND B are both true, and false otherwise. 
 
 
+## v = or
+
+| A | B | A v B |
+|---|---|:-----:|
+| T | T |   T	|
+| T | F |   T   |
+| F | T |   T	|
+| F | F |   F	|
+
+When given the logical form 'A OR B', it is said to be true when A is True or B is True or when A AND B are True, and it is said to be false when both A AND B are False.
+
+## | = NAND
+
+| A | B | A | B |
+|---|---|:-----:|
+| T | T |   F	|
+| T | F |   T   |
+| F | T |   T	|
+| F | F |   T	|
 
 
+##--> = If then/Implies
+
+Implies means "if A is True then B is also True"
+
+| A | B | A --> B |
+|---|---|:-------:|
+| T | T |    T    |
+| T | F |    F    |
+| F | T |    T	  |
+| F | F |    T    |
+
+When given the argument 'If P then Q', the argument is said to be true when A and B are both True or A is False. It is said to be false when A is True and B is False.
+
+##<--> = If and only if
+
+If and only if means "if A is True (and ONLY True) then B is also True"
+
+| A | B | A <--> B |
+|---|---|:--------:|
+| T | T |     T    |
+| T | F |     F    |
+| F | T |     F	   |
+| F | F |     T    |
+
+When given the argument 'A if and only if B', the argument is said to be True when A and B are both True or both False; and they are said to be false if one is true and the other is false
+
+When A <--> B is true, we say that A and B are **Equivalent**.
+
+## ∴ = Therefore
 
 ##Standard form of an Inference
 1. antecedent 1 
@@ -57,7 +123,8 @@ This is an example of a logically valid argument that is unsound.
 >  ∴Q
 
 
-##Logical Forms
+
+#Logical Forms
 
 ###Modus Ponendo Ponens
 The **Law of detachment** (AKA **affirming the actecedent** and **modus ponens**) is the first form of deductive reasoning. It states that if a conditional statement is made, and a hypothesis is stated, then the conclusion is deduced from the statement and the hypothesis.
@@ -75,10 +142,7 @@ The **Law of detachment** (AKA **affirming the actecedent** and **modus ponens**
 ####Common associated fallacy - Affirming the consequent 
 Affirming the consequent (AKA **Converse Error**) is a formal fallacy of inferring the converse from the original statement.
 
-1. P --> Q (Conditional statement)
-2. Q 
-3.  ∴ P
-
+1. P --> Q (Conditional statement) 2. Q 3.  ∴ P 
 > If everyone was against me I'd have a bad day 
 
 > I had a bad day 
@@ -128,6 +192,7 @@ The law of syllogism (AKA **The Chain Rule** ) takes two conditional statements 
 >  If Jay gets bad grades, he won't get to do his job
 
 >  If Jay doesn't study, he won't get to do his job
+
 
 ###Disjunctive Syllogism
 This valid argument form (AKA Modus Tollendo Ponens, AKA process of elimination) is a syllogism having a disjunctive statement (using an OR(or XOR) operator) for one of its premises.
@@ -197,3 +262,8 @@ The above statement is true regardless of what Q is because P is True and we are
 
 
 ##References
+
+[Introduction to mathematical arguments](https://math.berkeley.edu/~hutching/teach/proofs.pdf)
+http://mathworld.wolfram.com/Logic.html
+http://philosophy.hku.hk/think/logic/whatislogic.php
+[Table of Mathematical Symbols from Wikipedia](https://en.wikipedia.org/wiki/Table_of_mathematical_symbols)
