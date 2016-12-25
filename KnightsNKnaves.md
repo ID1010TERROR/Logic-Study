@@ -3,7 +3,6 @@ Knights and Knaves logic puzzle were made populate by the logician and mathemati
 A very special island is inhabited only by knights and knaves. Knights always tell the truth, and knaves always lie.
 
 1. You meet two inhabitants: Zoey and Mel. Zoey tells you that Mel is a knave. Mel says, “Neither Zoey nor I are knaves.”
-A. Mel is a knight and Zoey is a knave
 
 2. You meet two inhabitants: Peggy and Zippy. Peggy tells you that “of Zippy and I, exactly one is a knight'. Zippy tells you that only a knave would say that Peggy is a knave.
 
