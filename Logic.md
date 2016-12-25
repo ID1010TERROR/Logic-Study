@@ -35,7 +35,7 @@ This is an example of a logically valid argument that is unsound.
 ###Rules of Inference or Syllogisms
 In logic a rule of inference (AKA **Syllogism**) is a logical form consisting of a function which takes premises, analyzes their syntax and returns a conclusion or conclusions using deductive reasoning.
 
-#Logical Operator Truth Tables
+#Logical Operator with Truth Tables
 
 ## ~ or ! = NOT
 
@@ -48,7 +48,7 @@ The operation "Not" is the simplest logical operation, its sole purpose is to "f
 
 The statement 'NOT P' is said to be the **Negation** of P. 
 
-## ^ = and
+## ^ = AND 
 
 | A | B | A ^ B |
 |---|---|:-----:|
@@ -60,7 +60,7 @@ The statement 'NOT P' is said to be the **Negation** of P.
 If given two statements A AND B, the argument is said to be True when A AND B are both true, and false otherwise. 
 
 
-## v = or
+## v = OR
 
 | A | B | A v B |
 |---|---|:-----:|
@@ -80,6 +80,7 @@ When given the logical form 'A OR B', it is said to be true when A is True or B 
 | F | T |   T	|
 | F | F |   T	|
 
+When given the logical form 'A | B', it is said to be False only when both A and B are True, otherwise it is False.
 
 ##--> = If then/Implies
 
@@ -110,6 +111,7 @@ When given the argument 'A if and only if B', the argument is said to be True wh
 When A <--> B is true, we say that A and B are **Equivalent**.
 
 ## ∴ = Therefore
+Therefore is the logical consequence or result of a give argument.
 
 ##Standard form of an Inference
 1. antecedent 1 
@@ -264,6 +266,9 @@ The above statement is true regardless of what Q is because P is True and we are
 ##References
 
 [Introduction to mathematical arguments](https://math.berkeley.edu/~hutching/teach/proofs.pdf)
+
 http://mathworld.wolfram.com/Logic.html
+
 http://philosophy.hku.hk/think/logic/whatislogic.php
+
 [Table of Mathematical Symbols from Wikipedia](https://en.wikipedia.org/wiki/Table_of_mathematical_symbols)
