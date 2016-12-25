@@ -25,7 +25,54 @@ A very special island is inhabited only by knights and knaves. Knights always te
 In the situation where there are only 2 individuals, there are only 4 possibilities
 
 1. Person A is a knight and person B is a knight === P ^ Q
-2. Person A is a knave and person B is a knave ===== ~P ^ ~Q
-2. Person A is a knight and person B is a knave ==== P ^ ~Q
-4. Person A is a knave and person B is a knight ==== ~P ^ Q
+2. Person A is a knight and person B is a knave ===== P ^ ~Q
+2. Person A is a knave and person B is a knight ==== ~P ^ Q
+4. Person A is a knave and person B is a knave ==== ~P ^ ~Q
+
+The possibilities can also be explained in the logic tables below:
+
+|  A   |  B  |Validity|
+|:----:|:---:|:------:|
+|  T   |  T  |        |
+|  T   |  F  |        |
+|  F   |  T  |        |
+|  F   |  F  |        |
+
+For example take the first question:
+You meet two inhabitants, Zoey and Mel. Zoey tells you that Mel is a knave. Mel says, “Neither Zoey nor I are knaves.”
+
+In this case Zoey will be A and Mel will be B. If you are able to deduce that one of the above possibilities in the table are invalid, you mark through that possibility and try to deduce which of the others are invalid until only one possibility or none are left.
+
+1. Is it possible both A and B are telling the truth? **No** because their statement contradict one another
+2. Is it possible that A is true and B is false? **Yes**
+3. Is it possible that A is false and B is true? **No**, because if B was true then A wouldn't be able to say B was a Knave.
+4. Is it possible that A is false and B is false? **No**, because if A were a Knave and B were a knave then A woulnd't be able to say B is a knave because it would be telling the truth.
+
+
+
+
+
+Logic table to could be expanded exponentially to accomadate more than Knights and/or knaves. Bear in mind, your table will double in size for each new player you include. The truth tables however do save space and simplify the process over writing out each possible permutation of events.
+
+|  A  |  B  |  C  |  D  |Validity|
+|:---:|:---:|:---:|:---:|:------:|
+|  T  |  T  |  T  |  T  |        |
+|  T  |  T  |  T  |  F  |        |
+|  T  |  T  |  F  |  T  |        |
+|  T  |  T  |  F  |  F  |        |
+|  T  |  F  |  T  |  T  |        |
+|  T  |  F  |  T  |  F  |        |
+|  T  |  F  |  F  |  T  |        |
+|  T  |  F  |  F  |  F  |        |
+|  F  |  T  |  T  |  T  |        |
+|  F  |  T  |  T  |  F  |        |
+|  F  |  T  |  F  |  T  |        |
+|  F  |  T  |  F  |  F  |        |
+|  F  |  F  |  T  |  T  |        |
+|  F  |  F  |  T  |  F  |        |
+|  F  |  F  |  F  |  T  |        |
+|  F  |  F  |  F  |  F  |        |
+
+
+
 
