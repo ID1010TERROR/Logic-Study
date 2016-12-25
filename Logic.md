@@ -73,7 +73,7 @@ When given the logical form 'A OR B', it is said to be true when A is True or B 
 
 ## | = NAND
 
-| A | B | A \| B |
+| A | B | A &#124; B |
 |---|---|:-----:|
 | T | T |   F	|
 | T | F |   T   |
