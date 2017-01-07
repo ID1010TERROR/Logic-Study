@@ -1,43 +1,51 @@
 Below are my self-study notes in the realm of logic.
 
 #Overview
-Logic is the study of **Correct Reasoning** in that it attempts to use a set of principles governing the validity of a given argument or set of arguments. This includes the use of **Truth Tables**, **Binary Operators**, **Syllogisms**, etc to determine the validity of a given argument.
+In logic a statement or **Premise** are represented with letters or **Variables* such as P, Q, or R; that are either True or False (represented with a T or F respectively).
 
-#Terms
+For example the statements below:
 
-###Statements
-Sentences (AKA **Premises**) that are either True or False but not both. For example: 
+> **P**: 1 is an odd number / This statement is True 
 
-> 1 is an odd number 
+> **Q**: 1 is an even number / This statement is False
 
-> 3 is an even number
+To contrast these examples note that:
 
-The first statement is True, while the second statement is False
+> "Sudo Make me a sandwhich"
 
-###Logical Operations
-Statements can be combined or modified using Logical Operations via Logical Operators such as NOT, AND, OR, XOR, etc.
+That *command* is NOT considered a statement in logic because it doesn't possess a truth value.
 
-###Deductive Reasoning
-The process of reasoning from one or more premises(statements) to reach a logically certain conclusion.
 
-###Valid
-An argument is said to be "Valid" if it is impossible for its premises to be true while it's conclusion is false, meaning the conclusion must be true, if the premises are true.
+#Quantifiers
+Quantifiers are words that dictate "how many" there are **Existential** (represented by "∃") and **Universal** (represented by "∀") Quantifiers. 
 
-###Sound
-An argument is said to be "Sound" if it is valid AND the premises are true. An argument can be Valid without being sound for example:
+Examples of Existential Quantifiers are:
 
-1. Everyone who eats bannanas is a monkey
-2. Jane eats bannanas
-3. Therefore Jane is a Monkey
+* For some
+* Sometimes
+* There exists
+* There is
+* Many
 
-This is an example of a logically valid argument that is unsound.
+These words denote that a given property, or relation holds true for at least one or more item in the statement.
 
-###Rules of Inference or Syllogisms
-In logic a rule of inference (AKA **Syllogism**) is a logical form consisting of a function which takes premises, analyzes their syntax and returns a conclusion or conclusions using deductive reasoning.
+Examples of Universal Quantifiers are:
 
-#Logical Operator with Truth Tables
+* All
+* Every
+* Always
+* Any
+* None
+* Never
 
-## ~ or ! = NOT
+These words denote that a given property, or relation holds true for ALL items in the statement and they convey the idea of totality.
+
+#Connectives
+Logical Connectives or Logical Operators are symbols "~" or words "Not" that are used to connect two or more component statements into a compound statement that has it's own truth variable. These connectives can be further broken into Unary connectives (Not) or Binary connectives (And, Or, If/Then, Etc.)
+
+Below are a list of connectives and their truth tables which explain their effects against a given truth value
+
+## NOT AKA Negation (Represented as "~" or "!")  
 
 | A | ~A |
 |---|----|
@@ -48,7 +56,7 @@ The operation "Not" is the simplest logical operation, its sole purpose is to "f
 
 The statement 'NOT P' is said to be the **Negation** of P. 
 
-## ^ = AND 
+## AND AKA Conjunction  (Represented as "^")
 
 | A | B | A ^ B |
 |---|---|:-----:|
@@ -60,7 +68,7 @@ The statement 'NOT P' is said to be the **Negation** of P.
 If given two statements A AND B, the argument is said to be True when A AND B are both true, and false otherwise. 
 
 
-## v = OR
+## OR AKA Inclusive Disjunction (Represented as "v")
 
 | A | B | A v B |
 |---|---|:-----:|
@@ -71,7 +79,19 @@ If given two statements A AND B, the argument is said to be True when A AND B ar
 
 When given the logical form 'A OR B', it is said to be true when A is True or B is True or when A AND B are True, and it is said to be false when both A AND B are False.
 
-## | = NAND
+## XOR AKA Exclusive Disjunction (Also represented as EOR, EXOR, "⊻", "⊕", "↮", and "≢")
+
+| A | B | A ⊕ B |
+|---|---|:-----:|
+| T | T |   F	|
+| T | F |   T   |
+| F | T |   T	|
+| F | F |   F	|
+
+When given the logical form 'A OR B', it is said to be true ONLY when A is True or B is True but not when A and B are both True.
+
+
+## NAND AKA Negated Conjunction (Represented as |)
 
 | A | B | A &#124; B |
 |---|---|:-----:|
@@ -112,6 +132,60 @@ When A <--> B is true, we say that A and B are **Equivalent**.
 
 ## ∴ = Therefore
 Therefore is the logical consequence or result of a give argument.
+
+
+#Truth Tables
+Truth tables can be used to determine the unknown truth of a given compound statement as shown below.
+Suppose we want to determine the truth of ~p v ~q and ~(p ^ q)
+
+step 1. Start with a blank truth table and lay out the statements you wish to solve for starting with the truths of p and q. Something to note when building your truth tables is that your number of rows will be 2 ** N thats 2 to the power of N, N being the number of variables you are working with, in our case that's p and q or 2. So that's 2 raised to the power of 2 = 4. That's something that will help you when planning out your truth tables. Bear in mind your rows will be growing exponentially, these things can get pretty big, fast...
+
+| p | q | p ^ q | ~(p ^ q) | ~p | ~q | ~p v ~q |
+|---|---|:-----:|:--------:|:--:|:--:|:-------:|
+| T | T |   	|          |    |    |         |
+| T | F |       |          |    |    |         |
+| F | T |    	|          |    |    |         |
+| F | F |    	|          |    |    |         |
+
+
+Step 2. Solve your most simple connectives first for example we solve p ^ q as explained above for the conjunctive And operation
+
+| p | q | p ^ q | ~(p ^ q) | ~p | ~q | ~p v ~q |
+|---|---|:-----:|:--------:|:--:|:--:|:-------:|
+| T | T |   T	|          |    |    |         |
+| T | F |   F   |          |    |    |         |
+| F | T |   F	|          |    |    |         |
+| F | F |   F	|          |    |    |         |
+
+Step 3. Solve your negations of p and q by negating the values in the first and second columns respectively
+
+| p | q | p ^ q | ~(p ^ q) | ~p | ~q | ~p v ~q |
+|---|---|:-----:|:--------:|:--:|:--:|:-------:|
+| T | T |   T	|          | F  | F  |         |
+| T | F |   F   |          | F  | T  |         |
+| F | T |   F	|          | T  | F  |         |
+| F | F |   F	|          | T  | T  |         |
+
+Step 4. Solve your fourth column by negating the values of your third column.
+
+| p | q | p ^ q | ~(p ^ q) | ~p | ~q | ~p v ~q |
+|---|---|:-----:|:--------:|:--:|:--:|:-------:|
+| T | T |   T	|    F     | F  | F  |         |
+| T | F |   F   |    T     | F  | T  |         |
+| F | T |   F	|    T     | T  | F  |         |
+| F | F |   F	|    T     | T  | T  |         |
+
+Step 5. Solve your final column by applying an inclusive or operation (disjunction) on your fifth and sixth columns.
+
+| p | q | p ^ q | ~(p ^ q) | ~p | ~q | ~p v ~q |
+|---|---|:-----:|:--------:|:--:|:--:|:-------:|
+| T | T |   T	|    F     | F  | F  |    F    |
+| T | F |   F   |    T     | F  | T  |    T    |
+| F | T |   F	|    T     | T  | F  |    T    |
+| F | F |   F	|    T     | T  | T  |    T    |
+
+That's all there is to it, and from this truth table we are able to demonstrate a Demorgans Law, that is that  ~(p ^ q) is logically equivalent to ~p v ~q, since their truth tables match exactly. Alternatively the same is true for ~(p v q) being logically equivalent to ~p ^ ~q.
+
 
 ##Standard form of an Inference
 1. antecedent 1 
@@ -260,6 +334,35 @@ For example given the true statement:
 > Carbs are delicious or cocaine is a hell of a drug.
 
 The above statement is true regardless of what Q is because P is True and we are using the OR operator.
+
+#Glossary
+
+###Statements
+Sentences (AKA **Premises**) that are either True or False but not both. For example: 
+
+###Logical Operations
+Statements can be combined or modified using Logical Operations via Logical Operators such as NOT, AND, OR, XOR, etc.
+
+###Deductive Reasoning
+The process of reasoning from one or more premises(statements) to reach a logically certain conclusion.
+
+###Valid
+An argument is said to be "Valid" if it is impossible for its premises to be true while it's conclusion is false, meaning the conclusion must be true, if the premises are true.
+
+###Sound
+An argument is said to be "Sound" if it is valid AND the premises are true. An argument can be Valid without being sound for example:
+
+1. Everyone who eats bannanas is a monkey
+2. Jane eats bannanas
+3. Therefore Jane is a Monkey
+
+This is an example of a logically valid argument that is unsound.
+
+###Rules of Inference or Syllogisms
+In logic a rule of inference (AKA **Syllogism**) is a logical form consisting of a function which takes premises, analyzes their syntax and returns a conclusion or conclusions using deductive reasoning.
+
+
+
 
 
 
