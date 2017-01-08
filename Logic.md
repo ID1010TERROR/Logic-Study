@@ -1,7 +1,7 @@
 Below are my self-study notes in the realm of logic.
 
 #Overview
-In logic a statement or **Premise** are represented with letters or **Variables* such as P, Q, or R; that are either True or False (represented with a T or F respectively).
+In logic a statement or **Premise** are represented with letters or *Variables* such as P, Q, or R; that are either True or False (represented with a T or F respectively).
 
 For example the statements below:
 
@@ -113,7 +113,7 @@ Implies means "if A is True then B is also True"
 | F | T |    T	  |
 | F | F |    T    |
 
-When given the argument 'If P then Q', the argument is said to be true when A and B are both True or A is False. It is said to be false when A is True and B is False.
+When given the argument 'If P then Q', the argument is said to be true when A and B are both True or A is False. It is said to be false when A is True and B is False. 
 
 ##<--> = If and only if
 
@@ -357,6 +357,14 @@ An argument is said to be "Sound" if it is valid AND the premises are true. An a
 3. Therefore Jane is a Monkey
 
 This is an example of a logically valid argument that is unsound.
+
+###Vacuous Truth
+Vacuous means empty, and in boolean logic it elaborates on the idea that in some instances it is possible for a premise to be logically True while not actually existing.
+Examples of this include:
+"I ate all of the vegitables on my plate, because there were no vegitables on my plate."
+Another example is that of an if/then relationship where the antecedent is false, for instance:
+"If i get elected, I will lower taxes, and I didn't get elected" In this case regardless of whether taxes were lowered, i technically told the truth, well.. at least the vacuous truth.
+
 
 ###Rules of Inference or Syllogisms
 In logic a rule of inference (AKA **Syllogism**) is a logical form consisting of a function which takes premises, analyzes their syntax and returns a conclusion or conclusions using deductive reasoning.
